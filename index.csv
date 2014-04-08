@@ -1,0 +1,19 @@
+ID,Name,Role,Location,Length,Colour,Subtitles,Edits,Audio_File
+1,Andrea,Sterilised-woman,,48,l_green,ANDREA_CHINGUEL.csv,,ANDREA_CHINGUEL.wav
+2,Unknown,Sterilised-woman,Huancabamba,49,yellow,ANONIMO_ID_72.csv,,ANONIMO_ID_72.wav
+3,Unknown,Sterilised-woman,Huancabamba,199,l_purple,ANONIMO_ID_131.csv,,ANONIMO_ID_131.wav
+4,Benita,Sterilised-woman,Sondorillo,129,d_purple,BENITA_TICLAHUANCA.csv,,BENITA_TICLAHUANCA.wav
+5,Carmela,Sterilised-woman,Huarmaca,89,l_blue,CARMELA_HUAYAMA.csv,,CARMELA_HUAYAMA.wav
+6,Cruz,Sterilised-woman,Sondorillo,120,l_yellow,CRUZ_ALBERCA.csv,,CRUZ_ALBERCA.wav
+7,Esperanza,Sterilised-woman,Huarmaca,376,red,ESPERANZA_fulltestimony.csv,ESPERANZA_edited.csv,ESPERANZA_fulltestimony.wav
+8,Francisca,Sterilised-woman,Sondorillo,327,l_blue,FRANCISCA_fulltestimony.csv,FRANCISCA_edited.csv,FRANCISCA_fulltestimony.wav
+9,Ma Magdalena ,Sterilised-woman,Huancabamba,102,d_green,MA_MAGDALENA_PUSMA.csv,,MA_MAGDELENA_PUSMA.wav
+10,Santos,Sterilised-woman,Sondorillo,36,yellow,SANTOS_MIJAHUANCA.csv,,SANTOS_MIJAHUANCA.wav
+11,Teodula,Sterilised-woman,Huancabamba,461,l_purple,TEODULA_fulltestimony.csv,TEODULA_edited.csv,TEODULA_fulltestimony.wav
+12,Cecilia,Sterilised-woman,Sondorillo,111,l_yellow,Cecilia_Pena_Guerrero.csv,,Cecilia_Pena_Guerrero.wav
+13,Santos,Sterilised-woman,Huancabamba,173,d_purple,Santos_Manchay_Castillo.csv,,Santos_Manchay_Castillo.wav
+14,Marta,Sterilised-woman,Sondorillo,51,l_green,Marta_Pena_Santos.csv,,Marta_Pena_Santos.wav
+15,Herbalinda,Sterilised-woman,Sondorillo,70,red,Herbalinda.csv,,Herbalinda.wav
+16,Alejandro,Relative,Huancabamba,261,l_blue,Alejandro_Herrera.csv,,Alejandro_Herrera.wav
+17,Unknown,Relative,Huancabamba,147,l_purple,HIJO.csv,,HIJO.wav
+18,Unknown,Sterilised-woman,,84,yellow,Anonimo_101.csv,,Anonimo_101.wav

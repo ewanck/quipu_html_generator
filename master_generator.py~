@@ -1,0 +1,16 @@
+import csv
+
+index = csv.reader(file('index.csv', 'rb'))
+
+i = 0
+
+html = ""
+
+for item in index:
+    if i>0:
+        container = """<div id=\""""+item[1]+"""-thread-container" class="thread-container """+item[2]+""" """+item[3]+"""" data-name=\"""" + item[1] +"""" data-len=\""""+item[4]+"""" data-src=\""""+item[8]+""""><p><img class="start-knot" />"""
+
+        html = html + container
+
+print html
+    
