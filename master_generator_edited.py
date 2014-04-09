@@ -1,6 +1,6 @@
 import csv
 
-index = csv.reader(file('index_edited.csv', 'rb'))
+#index = csv.reader(file('index_edited.csv', 'rb'))
 
 i = 0
 
@@ -8,32 +8,34 @@ html = ""
 
 f = open('html/master_edited.html','w')
 
-colors = {"l_green":{"val":"25,189,101", "knot":"buttons/l_green.png"}, "l_blue":{"val":"78,191,191", "knot":"buttons/l_blue.png"}, "red":{"val":"225,27,75", "knot":"buttons/red.png"}, "yellow":{"val":"250,203,17","knot":"buttons/yellow.png"},"l_purple":{"val":"177,101,169", "knot":"buttons/l_purple.png"}, "d_purple":{"val":"125,54,150","knot":"buttons/d_purple.png"}, "d_green":{"val":"132,201,138", "knot":"buttons/d_green.png"}}
-
 threadid = 0;
 
-for item in index:
-    if i>0:
-        output = open("html/"+item[1]+ str(i)+".html","w")
-        container = """<div id=\""""+item[0]+"""-thread-container" class="thread-container """+item[2]+""" """+item[3]+"""" data-name=\"""" + item[1] +"""" data-len=\""""+item[4]+"""" data-src="QUIPU_ARCHIVE/"""+item[8]+"""" data-color=\""""+colors[item[5]]["val"]+""""><p><img class="start-knot" src=\""""+colors[item[5]]["knot"]+""""/>"""
+subtitles = csv.reader(file('subtitles/ESPERANZA_A_spanish.csv', 'rb'))
+ii = 0;
+thread = "<p>"
+name = "esperanza"
+section = "a"
 
-        subtitles = csv.reader(file('subtitles/'+item[6], 'rb'))
-        ii = 0;
-        thread = ""
-        for subtitle in subtitles:
-            if ii>0:
-                time_in = str((float(subtitle[3])/24))
-                time_out = str((float(subtitle[4])/24))
-                thread = thread + "<a id='thread_"+str(threadid)+"' class='thread "+item[1]+"' data-in='"+time_in+"' data-out='"+time_out+"'>"+subtitle[6]+"</a>"
-                threadid = threadid + 1
-            ii = ii + 1
 
-        output.write(container+thread+"""</p></div>""")
-        html = html + container + thread + """</p></div>"""
-        output.close()
+for subtitle in subtitles:
+    if ii>0:
+        time_in = str((float(subtitle[3])/24))
+        time_out = str((float(subtitle[4])/24))
+        thread = thread + "<a id='thread_a_"+str(threadid)+"' class='thread "+name+" "+section+"' data-in='"+time_in+"' data-out='"+time_out+"'>"+subtitle[6]+"</a>"
+        threadid = threadid + 1
+        edits = csv.reader(file('edits/ESPERANZA_A.csv', 'rb'))
+        for edit in edits:
+            print edit[0]
+            print ii
+            if edit[0]==str(ii):
+                print "write"
+                thread = thread + "<a id='thread_z_"+str(threadid)+"' class='thread edited "+name+" "+section+"'>"+edit[1]+"</a>"
+    ii = ii + 1
+        
+#    output.write(container+thread+"""</p></div>""")
+#    html = html + thread + """</p></div>"""
+#    output.close()
 
-    i = i +1
-
-f.write(html)
+f.write(thread)
 f.close()
     

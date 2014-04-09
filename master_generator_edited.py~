@@ -1,12 +1,12 @@
 import csv
 
-index = csv.reader(file('index.csv', 'rb'))
+index = csv.reader(file('index_edited.csv', 'rb'))
 
 i = 0
 
 html = ""
 
-f = open('html/master.html','w')
+f = open('html/master_edited.html','w')
 
 colors = {"l_green":{"val":"25,189,101", "knot":"buttons/l_green.png"}, "l_blue":{"val":"78,191,191", "knot":"buttons/l_blue.png"}, "red":{"val":"225,27,75", "knot":"buttons/red.png"}, "yellow":{"val":"250,203,17","knot":"buttons/yellow.png"},"l_purple":{"val":"177,101,169", "knot":"buttons/l_purple.png"}, "d_purple":{"val":"125,54,150","knot":"buttons/d_purple.png"}, "d_green":{"val":"132,201,138", "knot":"buttons/d_green.png"}}
 
